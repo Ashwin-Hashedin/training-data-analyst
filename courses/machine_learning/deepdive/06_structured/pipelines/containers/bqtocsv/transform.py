@@ -132,5 +132,6 @@ if __name__ == '__main__':
                       help='whether to run the job locally or in Cloud Dataflow.')
 
   args = parser.parse_args()
+  print("Testing CI build")
 
   preprocess(args.mode == 'local', args.project, args.bucket, args.start_year)
