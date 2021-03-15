@@ -133,5 +133,5 @@ if __name__ == '__main__':
 
   args = parser.parse_args()
   print("Testing CI build")
-
+  print("CI build successful")
   preprocess(args.mode == 'local', args.project, args.bucket, args.start_year)
